@@ -1,11 +1,13 @@
-import sys
 from app.commands import Command
-
 
 class MenuCommand(Command):
     def execute(self):
-        print("Displaying menu:")
-        print("1. add")
-        print("2. subtract")
-        print("3. multiply")
-        print("3. divide")
+        menu_options = [
+            "add",
+            "subtract",
+            "multiply",
+            "divide"
+        ]
+        print("Menu:")
+        for index, option in enumerate(menu_options, start=1):
+            print(f"{index}. {option}")
