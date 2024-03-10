@@ -1,7 +1,7 @@
 from decimal import Decimal
 
 def add(*operands: Decimal) -> Decimal:
-    return sum(operands)
+    return sum(operands, Decimal(0))
 
 def subtract(*operands: Decimal) -> Decimal:
     result = operands[0]

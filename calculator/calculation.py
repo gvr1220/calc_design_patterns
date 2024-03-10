@@ -1,3 +1,4 @@
+
 from decimal import Decimal
 from typing import Callable, List
 
@@ -9,7 +10,6 @@ class Calculation:
     @staticmethod
     def create(operands: List[Decimal], operation: Callable[[List[Decimal]], Decimal]):
         return Calculation(operands, operation)
-
 
     def perform(self) -> Decimal:
         return self.operation(self.operands)
