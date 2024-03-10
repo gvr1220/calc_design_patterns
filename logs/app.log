@@ -1,0 +1,17 @@
+2024-03-05 16:10:36,193 - app.commands.operation_command - INFO - Performed operation: add(3,4) = 7
+2024-03-05 16:16:36,593 - app.commands.operation_command - INFO - Performed operation: divide(3,5) = 0.6
+2024-03-05 16:16:47,908 - app.commands.operation_command - INFO - Performed operation: multiply(3,5) = 15
+2024-03-05 16:26:10,310 - app.commands.operation_command - INFO - Performed operation: add(4,5) = 9
+2024-03-09 21:00:20,523 - app.commands.operation_command - INFO - Performed operation: add(3,4) = 7
+2024-03-09 21:12:49,866 - app.commands.operation_command - INFO - Performed operation: add(7,8) = 15
+2024-03-09 21:25:28,445 - app.commands.operation_command - INFO - Performed operation: add(2,5) = 7
+2024-03-09 21:44:25,751 - app.commands.operation_command - INFO - Performed operation: add(4,5) = 9
+2024-03-09 21:58:33,854 - app.commands.operation_command - INFO - Performed operation: add([Decimal('4'), Decimal('5'), Decimal('6')]) = 15
+2024-03-09 21:59:08,679 - app.commands.operation_command - INFO - Performed operation: add([Decimal('1'), Decimal('1'), Decimal('1'), Decimal('1'), Decimal('1'), Decimal('1'), Decimal('1'), Decimal('1')]) = 8
+2024-03-09 21:59:27,012 - app.commands.operation_command - INFO - Performed operation: subtract([Decimal('10'), Decimal('2'), Decimal('4')]) = 4
+2024-03-09 21:59:53,413 - app.commands.operation_command - INFO - Performed operation: subtract([Decimal('2'), Decimal('9'), Decimal('4')]) = -11
+2024-03-09 22:00:01,008 - app.commands.operation_command - ERROR - Cannot divide by zero
+2024-03-09 22:00:11,089 - app.commands.operation_command - INFO - Performed operation: divide([Decimal('10'), Decimal('4')]) = 2.5
+2024-03-09 22:00:23,867 - app.commands.operation_command - INFO - Performed operation: multiply([Decimal('4'), Decimal('6')]) = 24
+2024-03-09 22:08:07,892 - app.commands.operation_command - INFO - Performed operation: add([Decimal('2'), Decimal('4'), Decimal('6'), Decimal('7')]) = 19
+2024-03-09 22:09:28,539 - app.commands.operation_command - INFO - Performed operation: add([Decimal('3'), Decimal('5'), Decimal('7'), Decimal('9')]) = 24
