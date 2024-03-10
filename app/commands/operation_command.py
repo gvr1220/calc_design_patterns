@@ -9,7 +9,7 @@ import logging
 class OperationCommand(Command):
     def __init__(self, operation_function):
         self.operation_function = operation_function
-        self.logger = logging.getLogger(__name__)
+        self.logger = logging.getLogger('root')
 
     def execute(self):
         try:
@@ -17,8 +17,7 @@ class OperationCommand(Command):
             result = self.operation_function(*operands)
             calculation = Calculation.create(operands, self.operation_function)
             Calculations.add_calculation(calculation)
-            self.logger.info("Performed operation: {}({}) = {}".format(
-                self.operation_function.__name__, operands, result))
+            self.logger.info("{} operation".format(self.operation_function.__name__))
             print("The result of {} operation is {}".format(self.operation_function.__name__, result))
         except ValueError as e:
             self.logger.error(str(e))
