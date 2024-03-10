@@ -1,19 +1,26 @@
 from decimal import Decimal
 
+def add(*operands: Decimal) -> Decimal:
+    return sum(operands)
 
-def add(a: Decimal, b: Decimal) -> Decimal:
-    return a + b
+def subtract(*operands: Decimal) -> Decimal:
+    result = operands[0]
+    for operand in operands[1:]:
+        result -= operand
+    return result
+
+def multiply(*operands: Decimal) -> Decimal:
+    result = operands[0]
+    for operand in operands[1:]:
+        result *= operand
+    return result
+
+def divide(*operands: Decimal) -> Decimal:
+    result = operands[0]
+    for operand in operands[1:]:
+        if operand == 0:
+            raise ValueError("Cannot divide by zero")
+        result /= operand
+    return result
 
 
-def subtract(a: Decimal, b: Decimal) -> Decimal:
-    return a - b
-
-
-def multiply(a: Decimal, b: Decimal) -> Decimal:
-    return a * b
-
-
-def divide(a: Decimal, b: Decimal) -> Decimal:
-    if b == 0:
-        raise ValueError("Cannot divide by zero")
-    return a / b
